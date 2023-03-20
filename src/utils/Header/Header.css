@@ -1,0 +1,19 @@
+#navbar{
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.332);
+}
+
+#navItems{
+    
+    display: grid;
+    justify-content: space-evenly;
+}
+
+*{
+    background-color: #dbdbdc;
+}
+
+#mainLogo{
+    max-height: 10vh;
+    max-width: 10vh;
+}
