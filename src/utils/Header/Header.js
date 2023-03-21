@@ -9,8 +9,8 @@ function Header() {
 
     return (
         <Navbar expand="lg">
-        <img src={logo} alt="Main Logo" className="img-fluid" style={{ objectFit: 'contain'}} id='mainLogo'/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <img src={logo} alt="Main Logo" className="img-fluid" style={{ objectFit: 'contain'}} id='mainLogo'/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto justify-content-between" style={{ width: "100%" }}>
             <Nav.Link href="#about">About</Nav.Link>

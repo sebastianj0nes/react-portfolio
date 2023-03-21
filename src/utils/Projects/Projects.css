@@ -1,0 +1,11 @@
+.btn{
+    background-color: #80ed99;
+    width: 20vh;
+    margin: 2vh;
+    border: black 1px solid;
+}
+
+.projectImg { 
+    max-height: 85vh;
+    max-width: 68vh;
+}
