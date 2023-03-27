@@ -1,13 +1,11 @@
 import "./About.css";
 import { Col, Container, Row } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
 import gmail from "./Images/gmailLogo.png";
 import twitter from "./Images/twitterLogo.png";
 import github from "./Images/github_logo.png";
 
 function About() {
-
 
     return (
         <Container>
@@ -21,9 +19,9 @@ function About() {
                 <Row>
                     <h1 className="d-flex justify-content-center align-items-center p-3">Contact Me</h1>
                     <Col className="d-flex justify-content-center align-items-center p-3">
-                        <a href="mailto:jonesseb10@gmail.com"><img src={gmail} className="logos m-3"/></a>
-                        <a href="https://twitter.com/SeFB258" target="_blank"><img src={twitter} className="logos m-3"/></a>
-                        <a href="https://github.com/sebastianj0nes" target="_blank"><img src={github} className="logos m-3"/></a>
+                        <a href="mailto:jonesseb10@gmail.com"><img alt="Logo" src={gmail} className="logos m-3"/></a>
+                        <a href="https://twitter.com/SeFB258" target="_blank" rel="noreferrer" ><img alt="Logo" src={twitter} className="logos m-3"/></a>
+                        <a href="https://github.com/sebastianj0nes" target="_blank" rel="noreferrer"><img alt="Logo" src={github} className="logos m-3"/></a>
 
                     </Col>
                 </Row>

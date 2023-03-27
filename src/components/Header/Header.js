@@ -16,7 +16,7 @@ function Header() {
             <Nav.Link href="about" id='aboutL'>About</Nav.Link>
             <Nav.Link href="projects" id='projectL'>Projects</Nav.Link>
             <Nav.Link href="studies" id='studiesL'>Studies</Nav.Link>
-            <Nav.Link href="https://drive.google.com/file/d/1Tt5BNaLoo633IPEbV8n4A7PNFoyfYMsl/view?usp=sharing" target="_blank" id='resumeL'>Resume</Nav.Link>
+            <Nav.Link href="https://drive.google.com/file/d/1Tt5BNaLoo633IPEbV8n4A7PNFoyfYMsl/view?usp=sharing" target="_blank" id='resumeL' rel="noreferrer">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
