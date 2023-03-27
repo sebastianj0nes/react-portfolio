@@ -1,16 +1,43 @@
-import { useState } from "react";
-import { Container, Col, Row, ListGroup, ListGroupItem } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Col, Row, ListGroup, ListGroupItem, Button } from "react-bootstrap";
+import Modal from 'react-bootstrap/Modal';
 
 
 function Studies() {
     const [moduleDesc, setModuleDesc] = useState("");
+    const [show, setShow] = useState(false);
+    const [modalTitle, setModalTitle] = useState("");
 
-    const handleMouseOver = (event) => {
+    // Handle Click on Modal
+    const handleModalClick = (event) => {
         const value = event.target.id;
-        if (value === "dadsa"){
-            setModuleDesc("");
+        switch (value) {
+            case "dadsa":
+                setModalTitle("Design & Analysis of Data Strucutres & Algorithms ");
+                setModuleDesc("Sort & Search Methods, Algorithm Design Strategies, Data Structure Evaluation");
+                setShow(true);
+                break;
+            case "oo":
+                setModalTitle("Object Oriented Systems Development");
+                setModuleDesc("Class Modularisation, Software System Development following SDLC with Agile Approach");
+                setShow(true);
+                break;
+            case "dsa":
+                setModalTitle("Data, Schemas & Applications");
+                setModuleDesc("Full stack application development for a collaborative project");
+                setShow(true);
+                break;
+            case "itp":
+                setModalTitle("IT Project: Client Work");
+                setModuleDesc("Project Lead on research project with client from UWE IT services. Research project on implementation of a Metaverse in educational context");
+                setShow(true);
+                break;
         }
-        setModuleDesc(value);
+    }
+
+    // Handle Modal Close
+    const handleClose = () => {
+        setShow(false);
     }
 
     return (
@@ -18,23 +45,46 @@ function Studies() {
             <Row>
                 <h1 className="d-flex justify-content-center align-items-center p-3">STUDIES</h1>
                 <p className="text-muted d-flex justify-content-center align-items-center p-3">With a real desire & passion for learning I'm always looking for new opportunities</p>
-                <Col>
-                <h3 className="d-flex justify-content-center align-items-center p-3">Current Studies</h3>
-                <h5>BSc (Hons) Software Engineering for Business </h5>
-                <p>@ <a href="https://courses.uwe.ac.uk/6F3B/software-engineering-for-business" target="_blank">University of the West of England</a></p>
-                <p>Undergraduate degree in computing fundamenetals, programming paradigms and project management</p>
-                <p className="text-muted">Accredited by <a href="https://techskills.org/" target="_blank">TechSkills</a></p>
-                <p>My favourite modules I've completed;</p>
-                <ListGroup style={{width: "45vh"}}>
-                    <ListGroupItem onMouseOver={handleMouseOver} id="dadsa">Data Structures & Algorithms</ListGroupItem>
-                    <ListGroupItem onMouseOver={handleMouseOver} id="oo">Object-Oriented Systems Development</ListGroupItem>
-                    <ListGroupItem onMouseOver={handleMouseOver} id="dsa">Data, Schemas & Applications</ListGroupItem>
-                    <ListGroupItem onMouseOver={handleMouseOver} id="itp">IT Project: Client Work</ListGroupItem>
-                    <p className="d-flex justify-content-center align-items-center">{moduleDesc}</p>
-                </ListGroup>
+                <Col style={{ borderRight: "2px solid black" }}>
+                    <h3 className="d-flex justify-content-center align-items-center p-3">Current Studies</h3>
+                    <h5>BSc (Hons) Software Engineering for Business </h5>
+                    <p>@ <a href="https://courses.uwe.ac.uk/6F3B/software-engineering-for-business" target="_blank">University of the West of England</a></p>
+                    <p>Undergraduate degree in computing fundamenetals, programming paradigms and project management</p>
+                    <p className="text-muted">Accredited by <a href="https://techskills.org/" target="_blank">TechSkills</a></p>
+                    <p>My favourite modules I've completed;</p>
+                    <ListGroup style={{ width: "45vh" }}>
+                        <ListGroupItem onClick={handleModalClick} id="dadsa">Data Structures & Algorithms</ListGroupItem>
+                        <ListGroupItem onClick={handleModalClick} id="oo">Object-Oriented Systems Development</ListGroupItem>
+                        <ListGroupItem onClick={handleModalClick} id="dsa">Data, Schemas & Applications</ListGroupItem>
+                        <ListGroupItem onClick={handleModalClick} id="itp">IT Project: Client Work</ListGroupItem>
+                        <Modal show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                                <Modal.Title>{modalTitle}</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>{moduleDesc}</Modal.Body>
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={handleClose}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
+                        </Modal>
+                    </ListGroup>
                 </Col>
                 <Col>
-                <h3 className="d-flex justify-content-center align-items-center p-3">Finished Studies</h3>
+                    <h3 className="d-flex justify-content-center align-items-center p-3">Finished Studies</h3>
+                    <h5 >Front End Development Bootcamp</h5>
+                    <p>@ <a href="https://skillsforlife.edx.org/#:~:text=This%20course%20provides%20students%20with,js%2C%20ES6%2C%20and%20Node." target="_blank"> edX</a></p>
+                    <p>16-week intense coding bootcamp, learning Front End development using the latest technologies</p>
+                    <h5 className="d-flex justify-content-center align-items-center">Technologies Used:</h5>
+                    <Container className="d-flex justify-content-center align-items-center p-3">
+                        <ListGroup style={{ width: "45vh" }}>
+                            <ListGroupItem>React</ListGroupItem>
+                            <ListGroupItem>ES6</ListGroupItem>
+                            <ListGroupItem>Node.js</ListGroupItem>
+                            <ListGroupItem>jQuery</ListGroupItem>
+                        </ListGroup>
+                    </Container>
+
                 </Col>
             </Row>
 
