@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Container, Col, Row, ListGroup, ListGroupItem, Button } from "react-bootstrap";
 import Modal from 'react-bootstrap/Modal';
+import jsLogo from "./js_logo.png";
+import nodeLogo from "./node_logo.png";
+import reactLogo from "./react_logo.png";
+import "./Studies.css";
 
 
 function Studies() {
@@ -49,7 +53,7 @@ function Studies() {
                     <h3 className="d-flex justify-content-center align-items-center p-3">Current Studies</h3>
                     <h5>BSc (Hons) Software Engineering for Business </h5>
                     <p>@ <a href="https://courses.uwe.ac.uk/6F3B/software-engineering-for-business" target="_blank">University of the West of England</a></p>
-                    <p>Undergraduate degree in computing fundamenetals, programming paradigms and project management</p>
+                    <p>3 Year Undergraduate degree in computing fundamenetals, programming paradigms and project management</p>
                     <p className="text-muted">Accredited by <a href="https://techskills.org/" target="_blank">TechSkills</a></p>
                     <p>My favourite modules I've completed;</p>
                     <ListGroup style={{ width: "45vh" }}>
@@ -75,6 +79,7 @@ function Studies() {
                     <h5 >Front End Development Bootcamp</h5>
                     <p>@ <a href="https://skillsforlife.edx.org/#:~:text=This%20course%20provides%20students%20with,js%2C%20ES6%2C%20and%20Node." target="_blank"> edX</a></p>
                     <p>16-week intense coding bootcamp, learning Front End development using the latest technologies</p>
+                    <p className="text-muted">Created 13 websites + 2 unique projects using range of API's, methodologies & practices</p>
                     <h5 className="d-flex justify-content-center align-items-center">Technologies Used:</h5>
                     <Container className="d-flex justify-content-center align-items-center p-3">
                         <ListGroup style={{ width: "45vh" }}>
@@ -83,6 +88,9 @@ function Studies() {
                             <ListGroupItem>Node.js</ListGroupItem>
                             <ListGroupItem>jQuery</ListGroupItem>
                         </ListGroup>
+                        <img src={reactLogo} className="logos"/>
+                        <img src={nodeLogo} className="logos"/>
+                        <img src={jsLogo} className="logos"/>
                     </Container>
 
                 </Col>
