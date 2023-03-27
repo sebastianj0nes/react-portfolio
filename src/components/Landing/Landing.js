@@ -6,7 +6,6 @@ import { useState} from 'react';
 
 
 
-
 function Landing() {
 
     const [showText, setShowText] = useState(false);

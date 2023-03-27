@@ -1,15 +1,15 @@
 import './App.css';
-import Header from './utils/Header/Header';
-import Projects from './utils/Projects/Projects';
-import Landing from './utils/Landing/Landing';
-import About from './utils/About/About';
+import Header from './components/Header/Header';
+import Projects from './components/Projects/Projects';
+import Landing from './components/Landing/Landing';
+import About from './components/About/About';
+import Studies from './components/Studies/Studies';
 
 function App() {
   return (
     <div>
       <Header/>
-      <Projects/>
-      
+      <Studies/>
     </div>
   
   );
