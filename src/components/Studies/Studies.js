@@ -47,7 +47,7 @@ function Studies() {
     return (
         <Container>
             <Row>
-                <h1 className="d-flex justify-content-center align-items-center p-3">STUDIES</h1>
+                <h1 className="d-flex justify-content-center align-items-center p-3" id="sHeader">STUDIES</h1>
                 <p className="text-muted d-flex justify-content-center align-items-center p-3">With a real desire & passion for learning I'm always looking for new opportunities</p>
                 <Col style={{ borderRight: "2px solid black" }}>
                     <h3 className="d-flex justify-content-center align-items-center p-3">Current Studies</h3>

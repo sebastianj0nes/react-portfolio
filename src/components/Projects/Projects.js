@@ -15,7 +15,7 @@ function Projects() {
     return (
         <Container>
             <Row>
-                <h1 className="d-flex justify-content-center align-items-center p-3">PROJECTS</h1>
+                <h1 className="d-flex justify-content-center align-items-center p-3" id="pHeader">PROJECTS</h1>
                 <p className="d-flex justify-content-center align-items-center">During my developer journey, I've built many projects using a range of technologies. </p>
                 <p className="d-flex justify-content-center align-items-center text-muted">Here's some of my favourites</p>
                 <Row>

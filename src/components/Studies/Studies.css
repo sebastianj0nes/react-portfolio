@@ -2,3 +2,7 @@
     max-height: 10vh;
     max-width: 7vh;
 }
+
+#sHeader{
+    border-bottom: 5px solid #a0c4ff;
+}

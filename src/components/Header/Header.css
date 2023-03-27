@@ -3,6 +3,26 @@
     background-color: rgba(0, 0, 0, 0.332);
 }
 
+#aboutL{
+    border-bottom: 5px solid #06d6a0;
+}
+
+#projectL{
+    border-bottom: 5px solid #ef476f;
+}
+
+#lessonsL{
+    border-bottom: 5px solid #003566;
+}
+
+#studiesL{
+    border-bottom: 5px solid #a0c4ff;
+}
+
+#resumeL{
+    border-bottom: 5px solid #ffc600;
+}
+
 #navItems{
     
     display: grid;
