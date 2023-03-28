@@ -1,8 +1,6 @@
 import logo from './spinwheelLogo.png';
 import "./Header.css";
 import { Navbar, Nav } from 'react-bootstrap';
-import Col from 'react-bootstrap';
-import Row from 'react-bootstrap';
 
 function Header() {
 

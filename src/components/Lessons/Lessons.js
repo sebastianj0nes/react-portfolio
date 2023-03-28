@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Button, ListGroup, ListGroupItem  } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import "./Lessons.css";
 
 

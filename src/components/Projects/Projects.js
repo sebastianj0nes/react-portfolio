@@ -1,4 +1,4 @@
-import { Container, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./Projects.css";
 import lca from "./Images/LCA_H.png";
 import tca from "./Images/TCA_H.png";
@@ -29,7 +29,7 @@ function Projects() {
                             <p>Both descriptions are shown side by side, randomly swapping each round</p>
                             <p>The user must then choose between which they think is the real article</p>
                             <p>Scoring system is kept across the rounds</p>
-                            <a href="https://github.com/sebastianj0nes/twin-cities-application" target="_blank" rel="noreferrer"><img src={glogo} className="glogo" /></a>
+                            <a href="https://github.com/sebastianj0nes/twin-cities-application" target="_blank" rel="noreferrer"><img src={glogo} className="glogo" alt="Github logo"/></a>
                             <br/>
                             <a href="https://robotvsreporters.netlify.app/" target="_blank" rel="noreferrer">Try it here!</a>
                             <h4 className="mt-4">Tech Stack:</h4>
@@ -46,7 +46,7 @@ function Projects() {
                         <p>Designed with Astah using use-case, class and sequence diagrams</p>
                         <p>Then using Scene Builder to conceptualise the GUI</p>
                         <p>After the GUI was built, implementing class functionality using JavaFX</p>
-                        <a href="https://github.com/sebastianj0nes/luxury-campsite-gui" target="_blank" rel="noreferrer"><img src={glogo} className="glogo" /></a>
+                        <a href="https://github.com/sebastianj0nes/luxury-campsite-gui" target="_blank" rel="noreferrer"><img src={glogo} className="glogo" alt="Github logo"/></a>
                         <h4 className="mt-4">Tech Stack:</h4>
                         <p>JavaFX, Scene Builder, Astah</p>
                     </Col>
@@ -59,7 +59,7 @@ function Projects() {
                         <p>Pulling weather data using Openweather API about Twin Cities, Edinburgh & Munich</p>
                         <p>Using mySQL database to host information about point of interests to display on the map, displayed using Google Maps API</p>
                         <p>6 points of interest for each city, on hover displays more information </p>
-                        <a href="https://github.com/sebastianj0nes/twin-cities-application" target="_blank" rel="noreferrer"><img src={glogo} className="glogo" /></a>
+                        <a href="https://github.com/sebastianj0nes/twin-cities-application" target="_blank" rel="noreferrer"><img src={glogo} className="glogo" alt="Github logo"/></a>
                         <h4 className="mt-5">Tech Stack:</h4>
                         <p>PHP, Javascript, mySQL, PHPMyAdmin</p>
                         <p className="text-muted">I also made some documentation for this app! Find it <a href="https://sebastianj0nes.github.io/twin-cities-documentation/" target="_blank" rel="noreferrer">here!</a></p>

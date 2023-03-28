@@ -36,6 +36,8 @@ function Studies() {
                 setModuleDesc("Project Lead on research project with client from UWE IT services. Research project on implementation of a Metaverse in educational context");
                 setShow(true);
                 break;
+            default:
+                break;
         }
     }
 
@@ -52,9 +54,9 @@ function Studies() {
                 <Col style={{ borderRight: "2px solid black" }}>
                     <h3 className="d-flex justify-content-center align-items-center p-3">Current Studies</h3>
                     <h5>BSc (Hons) Software Engineering for Business </h5>
-                    <p>@ <a href="https://courses.uwe.ac.uk/6F3B/software-engineering-for-business" target="_blank">University of the West of England</a></p>
+                    <p>@ <a href="https://courses.uwe.ac.uk/6F3B/software-engineering-for-business" target="_blank" rel="noreferrer">University of the West of England</a></p>
                     <p>3 Year Undergraduate degree in computing fundamenetals, programming paradigms and project management</p>
-                    <p className="text-muted">Accredited by <a href="https://techskills.org/" target="_blank">TechSkills</a></p>
+                    <p className="text-muted">Accredited by <a href="https://techskills.org/" target="_blank" rel="noreferrer">TechSkills</a></p>
                     <p>My favourite modules I've completed;</p>
                     <ListGroup style={{ width: "45vh" }}>
                         <ListGroupItem onClick={handleModalClick} id="dadsa">Data Structures & Algorithms</ListGroupItem>
@@ -77,7 +79,7 @@ function Studies() {
                 <Col>
                     <h3 className="d-flex justify-content-center align-items-center p-3">Finished Studies</h3>
                     <h5 >Front End Development Bootcamp</h5>
-                    <p>@ <a href="https://skillsforlife.edx.org/#:~:text=This%20course%20provides%20students%20with,js%2C%20ES6%2C%20and%20Node." target="_blank"> edX</a></p>
+                    <p>@ <a href="https://skillsforlife.edx.org/#:~:text=This%20course%20provides%20students%20with,js%2C%20ES6%2C%20and%20Node." target="_blank" rel="noreferrer"> edX</a></p>
                     <p>16-week intense coding bootcamp, learning Front End development using the latest technologies</p>
                     <p className="text-muted">Created 13 websites + 2 unique projects using range of API's, methodologies & practices</p>
                     <h5 className="d-flex justify-content-center align-items-center">Technologies Used:</h5>
@@ -88,9 +90,9 @@ function Studies() {
                             <ListGroupItem>Node.js</ListGroupItem>
                             <ListGroupItem>jQuery</ListGroupItem>
                         </ListGroup>
-                        <img src={reactLogo} className="logos"/>
-                        <img src={nodeLogo} className="logos"/>
-                        <img src={jsLogo} className="logos"/>
+                        <img src={reactLogo} className="logos" alt="Logos"/>
+                        <img src={nodeLogo} className="logos" alt="Logos"/>
+                        <img src={jsLogo} className="logos" alt="Logos"/>
                     </Container>
 
                 </Col>
