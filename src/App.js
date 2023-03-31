@@ -5,12 +5,12 @@ import Landing from './components/Landing/Landing';
 import About from './components/About/About';
 import Studies from './components/Studies/Studies';
 import Lessons from './components/Lessons/Lessons';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Header/>
       <Routes>
       <Route path="/" element={<Landing/>}/>
@@ -19,7 +19,7 @@ function App() {
       <Route path="/studies" element={<Studies/>}/>
       <Route path="/lessons" element={<Lessons/>}/>
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
