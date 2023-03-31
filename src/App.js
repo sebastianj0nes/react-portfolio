@@ -5,7 +5,7 @@ import Landing from './components/Landing/Landing';
 import About from './components/About/About';
 import Studies from './components/Studies/Studies';
 import Lessons from './components/Lessons/Lessons';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as  Routes, Route, BrowserRouter } from 'react-router-dom';
 
 
 function App() {
