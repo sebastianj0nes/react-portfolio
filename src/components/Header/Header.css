@@ -3,6 +3,14 @@
     background-color: rgba(0, 0, 0, 0.332);
 }
 
+#aboutL,
+#projectL,
+#lessonsL,
+#studiesL {
+    color: black;
+    text-decoration: none;
+}
+
 #aboutL{
     border-bottom: 5px solid #06d6a0;
 }
