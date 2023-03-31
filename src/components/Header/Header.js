@@ -11,9 +11,9 @@ function Header() {
         <Nav.Link href="/"><img src={logo} alt="Main Logo" className="img-fluid" style={{ objectFit: 'contain'}} id='mainLogo'/></Nav.Link>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto justify-content-between" style={{ width: "100%" }}>
-            <Nav.Link href="about" id='aboutL'>About</Nav.Link>
-            <Nav.Link href="projects" id='projectL'>Projects</Nav.Link>
-            <Nav.Link href="studies" id='studiesL'>Studies</Nav.Link>
+            <Nav.Link href="/about" id='aboutL'>About</Nav.Link>
+            <Nav.Link href="/projects" id='projectL'>Projects</Nav.Link>
+            <Nav.Link href="/studies" id='studiesL'>Studies</Nav.Link>
             <Nav.Link href="https://drive.google.com/file/d/1Tt5BNaLoo633IPEbV8n4A7PNFoyfYMsl/view?usp=sharing" target="_blank" id='resumeL' rel="noreferrer">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
